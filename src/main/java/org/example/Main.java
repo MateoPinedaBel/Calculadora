@@ -26,6 +26,18 @@ public class Main {
 
             switch (option) {
                 case 1:
+                    Scanner consola = new Scanner(System.in);
+                    int sumaUno,sumaDos;
+
+                    System.out.println("Digita el primer numero a sumar");
+                    sumaUno= consola.nextInt();
+
+                    System.out.println("Digita el segundo numero a sumar");
+                    sumaDos= consola.nextInt();
+
+                    int total = sumaUno+sumaDos;
+
+                    System.out.println("El valor total de la suma es "+total);
 
                     break;
 
