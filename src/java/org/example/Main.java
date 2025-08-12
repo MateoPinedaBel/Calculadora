@@ -1,4 +1,4 @@
-package org.example;
+package java.org.example;
 
 import java.util.Scanner;
 
@@ -34,7 +34,15 @@ public class Main {
                     break;
 
                 case 3:
+                    Integer a = 0;
+                    Integer b = 0;
 
+                    System.out.println("Ingrese el primer numero");
+                    num1 = scanner.nextInt();
+                    System.out.println("Ingrese el segundo numero");
+                    num2 = scanner.nextInt();
+                    Integer resultado = multiplicacion(num1 , num2);
+                    System.out.println("El resultado de la multiplicacion es " + resultado);
                     break;
 
                 case 4:
@@ -51,5 +59,13 @@ public class Main {
         }
 
         scanner.close();
+    }
+
+    public static Integer multiplicacion(Integer num1, Integer num2) {
+        if (num1 == 0 || num2 == 0) {
+            System.out.println("No se puede multiplicar si tenemos un numero es 0");
+
+        }
+        return num1 * num2;
     }
 }
